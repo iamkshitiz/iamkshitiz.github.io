@@ -22,10 +22,6 @@ $('.navbar-nav a').on('click', function(event) {
 	event.preventDefault();
 });
 
-$("#navbarCollapse").scrollspy({
-	offset:20
-});
-
 $(".element").each(function() {
 	var $this = $(this);
 	$this.typed({
@@ -81,4 +77,8 @@ $("#owl-demo").owlCarousel({
 	goToFirstSpeed: 2000,
 	singleItem: true,
 	autoHeight: true,
+});
+
+$("#navbarCollapse").scrollspy({
+	offset:20
 });
